@@ -96,9 +96,9 @@ func (m *ipfsMetadata) IPFSConfig() (*ipfsConfig.Config, error) {
 	r := strings.ToLower(m.Routing)
 	switch r {
 	case "dht", "dhtclient", "dhtserver", "none":
-		cfg.Routing.Type = ipfsConfig.NewOptionalString(r)
+		cfg.Routing.Type = r
 	case "":
-		cfg.Routing.Type = ipfsConfig.NewOptionalString("dht")
+		cfg.Routing.Type = "dht"
 	default:
 		return nil, fmt.Errorf("invalid value for metadata property 'routing'")
 	}
