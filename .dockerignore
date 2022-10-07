@@ -1,0 +1,8 @@
+/dapr-ipfs-binding*
+/Dockerfile
+/*-bake.hcl
+go.work*
+README.md
+/example/
+/.github/
+/.vscode/

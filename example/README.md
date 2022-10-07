@@ -5,13 +5,16 @@ Requirements:
 - Make sure you have Dapr and the Dapr CLI installed. See Dapr's [Get started](https://docs.dapr.io/getting-started/) docs. You will need Dapr 1.9 or higher.
 - You also need Go 1.19 or higher.
 
-First, start the Dapr component. In the root folder of this project (one level up from here), run:
+First, start the Dapr component. We will use Docker for that:
 
 ```sh
-go run .
+docker run -d \
+  --name myipfs-component \
+  --volume /tmp/dapr-components-sockets:/tmp/dapr-components-sockets \
+  dapr-ipfs-binding
 ```
 
-In **another terminal**, from this `example` folder, run:
+From this `example` folder, run:
 
 ```sh
 # cd example
