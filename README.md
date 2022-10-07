@@ -15,7 +15,7 @@ metadata:
   name: <NAME>
   namespace: <NAMESPACE>
 spec:
-  type: bindings.ipfs
+  type: bindings.ipfs-pluggable
   version: v1
   metadata:
     ### Optional values:
