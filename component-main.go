@@ -8,10 +8,10 @@ import (
 	"github.com/hypernova3/dapr-ipfs-binding/component"
 )
 
-var log = logger.NewLogger("ipfs-pluggable")
+var log = logger.NewLogger("ipfs")
 
 func main() {
-	components.Register("ipfs-pluggable", components.WithOutputBinding(func() bindings.OutputBinding {
+	components.Register("ipfs", components.WithOutputBinding(func() bindings.OutputBinding {
 		return component.NewIPFSBinding(log)
 	}))
 	components.MustRun()

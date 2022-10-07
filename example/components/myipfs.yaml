@@ -3,6 +3,6 @@ kind: Component
 metadata:
   name: myipfs
 spec:
-  type: bindings.ipfs-pluggable
+  type: bindings.ipfs
   version: v1
   metadata:
