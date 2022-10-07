@@ -31,7 +31,6 @@ jobs:
           images: |
             ghcr.io/${{ github.actor }}/dapr-ipfs-binding
           tags: |
-            type=sha,format=long
             type=semver,pattern=v{{version}}
             type=semver,pattern=v{{major}}.{{minor}}
             type=ref,event=branch
