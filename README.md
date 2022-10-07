@@ -2,9 +2,13 @@
 
 This binding allows interacting with [IPFS](https://ipfs.io/), the peer-to-peer network for content distribution.
 
-It works as a [pluggable component](https://TODO).
+It works as a [pluggable component](https://TODO). See the official docs for how to run it.
 
 It supports connecting to the public IPFS network, or you can create a private one. This binding creates an IPFS node within Dapr, or you can use this binding to connect to an external IPFS node via its RESTful APIs.
+
+## Example usage
+
+See the [example](/example/) folder for an example app and how to run the component.
 
 ## Setup Dapr component
 
