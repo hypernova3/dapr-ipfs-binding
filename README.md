@@ -10,6 +10,14 @@ It supports connecting to the public IPFS network, or you can create a private o
 
 See the [example](/example/) folder for an example app and how to run the component.
 
+## Docker image
+
+Published on GitHub Container Registry:
+
+```text
+ghcr.io/hypernova3/dapr-ipfs-binding:latest
+```
+
 ## Setup Dapr component
 
 ```yaml
