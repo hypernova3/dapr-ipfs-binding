@@ -11,7 +11,7 @@ First, start the Dapr component. We will use Docker for that:
 docker run -d \
   --name myipfs-component \
   --volume /tmp/dapr-components-sockets:/tmp/dapr-components-sockets \
-  dapr-ipfs-binding
+  ghcr.io/hypernova3/dapr-ipfs-binding:edge
 ```
 
 From this `example` folder, run:

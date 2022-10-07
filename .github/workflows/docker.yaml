@@ -31,11 +31,11 @@ jobs:
           images: |
             ghcr.io/${{ github.actor }}/dapr-ipfs-binding
           tags: |
-            type=ref,event=branch
-            type=edge,branch=main
+            type=sha,format=long
             type=semver,pattern=v{{version}}
             type=semver,pattern=v{{major}}.{{minor}}
-            type=sha,format=long
+            type=ref,event=branch
+            type=edge,branch=main
 
       - name: Log into GitHub Container Registry
         uses: docker/login-action@v1
